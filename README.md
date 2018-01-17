@@ -6,7 +6,7 @@ The code is being used as a learning tool.
 
 ## To-Do 
 
-- Return JSON instead of string
-- Change to use Publish / Subscript pattern 
-- Add list of possible words (at the moment the word is always hangman)
-- Add graphics of hangman   
+- [x]Return JSON instead of string
+- [ ]Change to use Publish / Subscript pattern 
+- [ ]Add list of possible words (at the moment the word is always hangman)
+- [ ]Add graphics of hangman   
