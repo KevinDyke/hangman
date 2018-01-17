@@ -74,13 +74,12 @@ namespace Hangman
         public void CorrectGuess(char letter)
         {
             string newGuessWord = guessedWord;
-            int offset = 0;
-            //int letterAt;
-            while ((offset = wordToGuess.IndexOf(letter, offset)) != (-1) && (offset < newGuessWord.Length))
+
+            int[] indexes = Enumerable.Range(0, wordToGuess.Length).Where(x => wordToGuess[x] == letter).ToArray();
+            foreach (int index in indexes)
             {
-                newGuessWord = guessedWord.Substring(0, offset) + letter + guessedWord.Substring(offset + 1);
+                newGuessWord = guessedWord.Substring(0, index) + letter + guessedWord.Substring(index + 1);
                 guessedWord = newGuessWord;
-                offset++;
             }
             if (guessedWord == wordToGuess)
             {
