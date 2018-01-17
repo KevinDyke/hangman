@@ -33,14 +33,15 @@ namespace Hangman
 
         public string gameStatus()
         {
-            string str = string.Empty;
+            StringBuilder str = new StringBuilder();
 
-            str += "Word   : " + guessedWord;
-            str += System.Environment.NewLine;
-            str += "Guessed: [ ";
-            str += buildGuessesList();
-            str += " ]";
-            return str;
+            str.Append("Word   : ");
+            str.Append(guessedWord);
+            str.Append(System.Environment.NewLine);
+            str.Append("Guessed: [ ");
+            str.Append(buildGuessesList());
+            str.Append(" ]");
+            return str.ToString();
         }
 
         public void FormattedGameStatus()

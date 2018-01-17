@@ -1,8 +1,0 @@
-C:\code\c#\Hangman\HangmanUnitTestProject\obj\Debug\HangmanUnitTestProject.csprojResolveAssemblyReference.cache
-C:\code\c#\Hangman\HangmanUnitTestProject\bin\Debug\HangmanUnitTestProject.dll
-C:\code\c#\Hangman\HangmanUnitTestProject\bin\Debug\HangmanUnitTestProject.pdb
-C:\code\c#\Hangman\HangmanUnitTestProject\bin\Debug\Hangman.exe
-C:\code\c#\Hangman\HangmanUnitTestProject\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
-C:\code\c#\Hangman\HangmanUnitTestProject\bin\Debug\Hangman.pdb
-C:\code\c#\Hangman\HangmanUnitTestProject\obj\Debug\HangmanUnitTestProject.dll
-C:\code\c#\Hangman\HangmanUnitTestProject\obj\Debug\HangmanUnitTestProject.pdb

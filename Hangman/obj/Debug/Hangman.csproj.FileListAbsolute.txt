@@ -1,6 +1,0 @@
-C:\code\c#\Hangman\Hangman\bin\Debug\Hangman.exe.config
-C:\code\c#\Hangman\Hangman\bin\Debug\Hangman.exe
-C:\code\c#\Hangman\Hangman\bin\Debug\Hangman.pdb
-C:\code\c#\Hangman\Hangman\obj\Debug\Hangman.csprojResolveAssemblyReference.cache
-C:\code\c#\Hangman\Hangman\obj\Debug\Hangman.exe
-C:\code\c#\Hangman\Hangman\obj\Debug\Hangman.pdb
