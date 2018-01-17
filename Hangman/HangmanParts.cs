@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace Hangman
 {
@@ -26,35 +27,16 @@ namespace Hangman
             guesses = new List<char>();
         }
 
-        public string buildGuessesList()
-        {
-            return string.Join(",", guesses).TrimEnd(',').Replace(",", ", ");
-        }
-
         public string gameStatus()
         {
-            StringBuilder str = new StringBuilder();
+            GameStatus status = new GameStatus();
 
-            str.Append("Word   : ");
-            str.Append(guessedWord);
-            str.Append(System.Environment.NewLine);
-            str.Append("Guessed: [ ");
-            str.Append(buildGuessesList());
-            str.Append(" ]");
-            return str.ToString();
+            status.guessedWord = guessedWord;
+            status.inCorrect = guesses.ToArray();
+            // convert to JSON
+            return JsonConvert.SerializeObject(status);
         }
-
-        public void FormattedGameStatus()
-        {
-            string str = gameStatus();
-            string[] parts= str.Split(new string[] { Environment.NewLine }, StringSplitOptions.None);
-            Console.WriteLine(parts[0]);
-            ConsoleColor fg = Console.ForegroundColor;
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine(parts[1]);
-            Console.ForegroundColor = fg;
-        }
-
+        
         public void Guess(char guess)
         {
             guess = Char.ToLower(guess);
